@@ -1,0 +1,48 @@
+// Стили для картинки на ГС
+.wallpaper
+    max-width: 100%
+    font-family: $prime-font
+    margin-bottom: 71px
+    &-img
+        position: relative
+        z-index: 0
+        img
+            width: 100%
+            height: 100%
+    &-text
+        padding: 15px 15px
+        background-color: #fbfbfb
+        color: $color-grey-dark
+        @media (max-width: 768px)
+            padding: 10px 15px 0 15px
+        &__title
+            font-size: 20px
+            text-transform: uppercase
+            @media (max-width: 576px)
+                font-size: 23px
+        &__paragraph
+            font-size: 16px
+            font-family: $text-font
+            @media (max-width: 576px)
+                font-size: 18px
+        @media (max-width: 576px)
+            text-align: center
+            
+// Стили углового контента
+.corner-content
+    display: flex
+    flex-direction: column
+    position: absolute
+    bottom: 4px
+    left: 0
+    padding: 13px 18px
+    background-color: #444444
+    &__top
+        color: #9a9a9a
+        text-transform: uppercase
+        font-size: 18px
+    &__bottom
+        color: #fff
+        text-transform: uppercase
+        font-size: 28px
+

@@ -1,0 +1,67 @@
+body 
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+*
+	margin: 0
+// Стили контейнера
+.container
+	max-width: 1140px
+	margin: 0 auto
+	position: relative
+	padding: 
+		left: 10px
+		right: 10px
+	@media (max-width: 992px)
+		max-width: 960px
+	@media (max-width: 768px)
+		max-width: 720px
+	@media (max-width: 576px)
+		max-width: 540px
+
+// Сокрытие меню бургера на больших экранах
+.cmn-toggle-switch 
+	display: none
+
+// Размытие контента
+.content-wrapper_active
+    filter: blur(3px)
+
+
+a
+	text-decoration: none
+.layout
+	display: flex
+	flex-wrap: wrap
+.section
+	margin-bottom: 75px
+	flex-basis: 75%
+	@media (max-width: 992px)
+		flex-basis: 65%
+	@media (max-width: 768px)
+		flex-basis: 100%
+		margin-bottom: 30px
+	
+	
+		
+		
+.layout .block-heading
+	flex-basis: 75%
+	@media (max-width: 992px)
+		flex-basis: 65%
+	@media (max-width: 768px)
+		flex-basis: 100%
+@import 'vars'
+@import 'header'
+@import 'wallpaper'
+@import 'advices'
+@import 'work'
+@import 'footer'
+@import 'interface'
+@import 'block-heading'
+@import 'our-specs'
+@import 'workers'
+@import 'works'
+@import 'aside'
+@import 'blog'
+@import 'contact'

@@ -1,0 +1,43 @@
+.aside
+    padding-left: 30px
+    position: absolute
+    top: 192px
+    right: 0
+    width: 22%
+    @media (max-width: 992px)
+        width: 30%
+    @media (max-width: 768px)
+        position: relative
+        flex-basis: 100%
+        padding-left: 0
+        top: 0
+        
+    &-content
+        margin-bottom: 30px
+        .line
+            margin-bottom: 17px
+        &__title
+            font-size: 20px
+            font-family: $prime-font
+            margin-bottom: 13px
+            color: $color-grey-reg
+        &__text
+            font-size: 16px
+            font-family: $text-font
+            color: $color-grey-reg
+            ul
+                padding: 0
+                li
+                list-style: none
+        &-tweets
+            font-family: $text-font
+            color: $color-grey-reg
+            font-size: 16px
+            &__item
+                margin-bottom: 5px
+                margin-top: 25px
+            span
+                color: $color-grey-light
+            &__follow
+                margin-top: 25px
+            

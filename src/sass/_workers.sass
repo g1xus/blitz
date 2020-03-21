@@ -1,0 +1,47 @@
+.workers
+    margin-bottom: 70px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        @media (max-width: 768px)
+            justify-content: center
+    &-item
+        flex-basis: 30%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 768px)
+            flex-basis: 60%
+            text-align: center
+            margin-bottom: 30px
+        &__img
+            margin-bottom: 15px
+            width: 100%
+            
+            img
+                width: 100%
+            @media (max-width: 768px)
+                margin-bottom: 5px
+        &__name
+            margin-bottom: 5px
+            font-family: $prime-font
+            font-size: 20px
+            color: $color-grey-dark
+        &__post
+            margin-bottom: 20px
+            font-size: 14px
+            font-family: $prime-font-bold
+            color: #949393
+            @media (max-width: 768px)
+                margin-bottom: 10px
+        &__salary
+            font-size: 14px
+            font-family: $prime-font-bold
+            color: #515151
+        &__description
+            font-family: $text-font
+            font-size: 14px
+            line-height: 16px
+            color: #515151

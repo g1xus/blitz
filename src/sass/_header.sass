@@ -1,0 +1,61 @@
+// Стили для шапки сайта
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 35px 0 60px 0
+    position: relative
+    @media (max-width: 768px)
+        padding: 20px 10px 30px 10px
+    &__logo
+        flex-basis: 40%
+        img
+            @media (max-width: 768px)
+                width: 55px
+                height: 26px  
+// Стили навигации
+.nav
+    display: flex
+    justify-content: space-between
+    flex-basis: 60%
+    @media (max-width: 768px)
+        width: 100%
+        height: 70vh
+        position: fixed
+        top: 0
+        left: 0
+        justify-content: space-between 
+        text-align: center
+        flex-direction: column
+        background-color: #fff
+        z-index: 1
+        padding: 
+            top: 10px
+            bottom: 10px
+        transform: translateY(-100%)
+        transition: transform .5s
+    &__item
+        display: flex
+        flex-direction: column
+        &_top
+            font-family: $prime-font
+            font-size: 16px
+            color: $color-grey-light
+            text-transform: uppercase
+            @media (max-width: 768px)
+                display: none
+        &_bottom
+            font-family: $prime-font-bold
+            font-size: 20px
+            text-transform: uppercase
+            color: $color-grey-dark
+            font-weight: bold
+            &:hover
+                color: lighten($color-grey-dark, 20%)
+            @media (max-width: 768px)
+                font-size: 30px
+    &_active
+        @media (max-width: 768px)
+            transform: translateY(0)
+        
+                

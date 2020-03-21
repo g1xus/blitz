@@ -1,0 +1,85 @@
+.works
+    &-types
+        margin-bottom: 35px
+        font-family: $prime-font-bold
+        font-size: 18px
+        @media (max-width: 768px)
+            font-size: 16px
+            
+        &__item
+            color: $color-grey-dark
+            border-right: 2px solid $color-grey-dark
+            padding-left: 10px
+            padding-right: 10px
+            &:last-child
+                border-right: none
+            &:hover
+                color: $color-grey-light
+            &_active
+                color: $color-grey-light
+            @media (max-width: 768px)
+                padding-left: 5px
+                padding-right: 5px
+    &-cards
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 768px)
+            align-items: start
+        @media (max-width: 576px)
+            justify-content: center
+        &-item
+            flex-basis: 30%
+            margin-bottom: 32px
+            @media (max-width: 768px)
+                flex-basis: 45%
+            @media (max-width: 576px)
+                flex-basis: 70%
+                
+                
+            &-image
+                position: relative
+            &__hover
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                background: url(../img/magnifier.png) rgba(0, 0, 0, 0.75)  center no-repeat
+                display: none
+            @media (min-width: 992px)
+                &:hover &__hover
+                    display: block
+                    cursor: pointer
+                
+            &__img
+                width: 100%
+            &-text
+                padding-top: 25px
+                padding-left: 15px
+                padding-right: 15px
+                border-bottom: 1px solid #f8f8f8
+                height: 100%
+                @media (max-width: 576px)
+                    padding-left: 0
+                @media (max-width: 768px)
+                    border: none
+                    
+                    
+            &__title
+                font-family: $prime-font
+                color: $color-grey-dark
+                font-size: 20px
+                margin-bottom: 7px
+            &__type
+                font-family: $prime-font
+                color: $color-grey-light
+                font-size: 16px
+                margin-bottom: 20px
+            &__description
+                font-family: $text-font
+                color: #515151
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 19px

@@ -1,0 +1,57 @@
+.work
+    margin-bottom: 70px
+    &-title
+        display: flex
+        justify-content: center
+        background: url(../img/text-backround.jpg)
+        background-size: cover
+        margin-bottom: 55px
+        &__text
+            font-family: $prime-font-bold
+            font-size: 30px
+            color: $color-grey-dark
+            background-color: #fff
+            margin: 0
+            padding: 
+                left: 15px
+                right: 15px
+            font-weight: bold
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        @media (max-width: 992px)
+            justify-content: center
+    &-card
+        flex-basis: 220px
+        @media (max-width: 992px)
+            flex-basis: 30%
+            text-align: center
+            padding: 
+                left: 10px
+                right: 10px
+            margin-bottom: 20px
+        @media (max-width: 768px)
+            flex-basis: 100%
+            padding: 
+                left: 125px
+                right: 125px
+        @media (max-width: 576px)
+            padding: 
+                left: 50px
+                right: 50px
+        &__img
+            img
+                margin-bottom: 18px
+        &__title
+            font-family: $prime-font-bold
+            font-size: 20px
+            color: $color-grey-dark
+            margin-bottom: 18px
+            font-weight: bold
+            text-transform: uppercase
+        &__paragraph
+            font-family: $text-font
+            font-size: 14px 
+
+            

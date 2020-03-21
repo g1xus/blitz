@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+
+<body>
+
+  {{> ie}}
+    <div class="container">
+
+      {{> header}}
+      <div class="content-wrapper"><!--  Блок с контентом для последующего блюра при вызове меню -->
+        {{> block-heading}}
+        {{> our-specs}}
+        {{> workers}}
+    </div>
+    <!-- content-wrapper -->
+  </div>
+  <!-- /.container -->
+  {{> footer}}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

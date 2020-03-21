@@ -1,0 +1,59 @@
+// Блок с советами
+.advices
+    margin-bottom: 58px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        @media (max-width: 992px)
+            justify-content: space-around
+    &-item
+        flex-basis: 30%
+        display: flex
+        flex-wrap: wrap
+        @media (max-width: 992px)
+            flex-basis: 45%
+            margin-bottom: 40px
+        @media (max-width: 768px)
+            flex-basis: 100%
+            padding: 
+                left: 125px
+                right: 125px
+                bottom: 40px
+            border-bottom: lighten($color-grey-light, 25%) 1px solid
+        @media (max-width: 576px)
+            padding: 
+                left: 50px
+                right: 50px
+        &:first-child
+            @media (max-width: 768px)
+                padding-top: 20px
+                border-top: lighten($color-grey-light, 25%) 1px solid
+        &:last-child
+            @media (max-width: 768px)
+                margin-bottom: 0
+        &__img
+            flex-basis: 20%
+            @media (max-width: 992px)
+                flex-basis: 30%
+            @media (max-width: 768px)
+                flex-basis: 25%
+        &__title
+            font-family: $prime-font
+            font-size: 20px
+            flex-basis: 50%
+            color: $color-grey-dark
+            margin-bottom: 20px
+            text-transform: uppercase
+            @media (max-width: 768px)
+                font-size: 16px
+                margin-bottom: 10px
+            h3
+                margin: 0
+        &__text
+            font-family: $text-font
+            font-size: 14px
+            color: $color-grey-reg
+            margin-bottom: 10px
+            @media (max-width: 768px)
+                margin-bottom: 7px

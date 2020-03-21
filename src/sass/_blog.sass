@@ -1,0 +1,54 @@
+.blog
+    &-item
+        margin-bottom: 30px
+        &__title
+            font-family: $prime-font
+            color: $color-grey-dark
+            font-size: 20px
+            text-transform: uppercase
+            margin-bottom: 20px
+        &__img
+            width: 100%
+            margin-bottom: 25px
+        &-text
+            display: flex
+            margin-bottom: 30px
+            @media (max-width: 576px)
+                flex-direction: column
+            &-leftside
+                flex-basis: 60%
+                @media (max-width: 992px)
+                    flex-basis: 100%
+                @media (max-width: 576px)
+                    display: flex
+                    justify-content: space-around
+                    align-items: center
+                
+                    
+                &__title
+                    font-size: 16px
+                    color: $color-grey-reg
+                    margin-bottom: 7px
+                    font-family: $prime-font
+                    margin-top: 16px
+                    &:first-child
+                        margin-top: 0
+                    @media (max-width: 576px)
+                        margin: 0
+                        margin-bottom: 7px
+                        
+                &__span
+                    font-size: 12px
+                    color: $color-grey-light
+                    font-family: $text-font
+                    margin-bottom: 16px
+                    @media (max-width: 576px)
+                        margin: 0
+                        margin-bottom: 7px
+                        padding-right: 20px
+            &-rightside
+                &__text
+                    color: $color-grey-reg
+                    font-size: 14px
+                    line-height: 18px
+                    font-family: $text-font

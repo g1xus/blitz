@@ -1,0 +1,39 @@
+.line
+    width: 100%
+    height: 5px
+    background: url('../img/text-backround.jpg')
+.footer
+    width: 100%
+    height: 70px
+    @media ( max-width: 768px)
+        height: 40px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        max-width: 1140px
+        margin: 0 auto
+        font-family: $text-font
+        color: $color-grey-light
+        font-size: 14px
+        padding-top: 21px
+        @media ( max-width: 992px)
+            max-width: 960px
+            padding: 
+                left: 10px
+                right: 10px
+        @media ( max-width: 768px)
+            max-width: 720px
+            font-size: 12px
+            padding-top: 8px
+        @media (  max-width: 576px)
+            max-width: 540px
+
+            
+.copyright
+    span
+        color: $color-grey-reg
+.author
+    a
+        color: $color-grey-dark
+
+        
